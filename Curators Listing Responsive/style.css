@@ -19,6 +19,9 @@ header {
   display: flex;
   align-items: center;
 }
+.blank1 {
+  width: 312px;
+}
 .logo {
   display: flex;
   align-items: center;
@@ -81,11 +84,11 @@ button {
   gap: 12px;
 }
 .main1 {
+  padding: 24px;
   background: var(--Dot-Shop-Soft-Olive-Soft-Olive-900, #a3a6a0);
   background-size: contain;
 }
 .container1 {
-  padding: 24px;
   display: flex;
   justify-content: space-between;
 }
@@ -124,10 +127,6 @@ button {
   text-align: left;
   color: #ffffff;
   padding: 45px 15px;
-}
-.section-2 {
-  width: 684px;
-  height: 528px;
 }
 .main2 {
   padding: 24px;
@@ -205,9 +204,12 @@ footer {
   font-weight: 800;
   line-height: 21px;
 }
-@media (min-width: 390px) and (max-width: 768px) {
+@media (max-width: 768px) {
   .hamburger {
     width: 80px;
+  }
+  .blank1 {
+    display: none;
   }
   .logo {
     width: 32px;
@@ -245,9 +247,11 @@ footer {
   .section-1 {
     width: 360px;
   }
-  .section-2 {
-    height: 360px;
-    width: 360px;
+  .girls-1 {
+    display: none;
+  }
+  .girls-2 {
+    display: none;
   }
   .container1 {
     flex-direction: column-reverse;
@@ -299,5 +303,88 @@ footer {
     gap: 16px;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1439px) {
+  .hamburger {
+    width: 80px;
+  }
+  .blank1 {
+    display: none;
+  }
+  .logo {
+    width: 32px;
+  }
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .dotshop-header {
+    display: none;
+  }
+  .left-links {
+    display: none;
+  }
+  .location {
+    display: none;
+  }
+  .log-in {
+    display: none;
+  }
+  .user-img {
+    height: 18px;
+  }
+  .nav-bar {
+    padding-right: 16px;
+  }
+  .nav-buttons {
+    gap: 12px;
+  }
+  .curators {
+    font-size: 60px;
+    font-style: italic;
+    line-height: 60px;
+  }
+  .girls-1 {
+    display: none;
+  }
+  .girls-3 {
+    display: none;
+  }
+  .container1 {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .container2 {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .blank2 {
+    display: none;
+  }
+  .pamela {
+    font-size: 80px;
+    text-align: left;
+  }
+  .lauren {
+    font-size: 80px;
+    text-align: left;
+  }
+  .store {
+    padding: 45px 20px;
+  }
+  .img {
+    width: 111px;
+    height: 104px;
+  }
+}
+@media (min-width: 1440px) {
+  .hamburger {
+    display: none;
+  }
+
+  .girls-3 {
+    display: none;
+  }
+  .girls-2 {
+    display: none;
+  }
 }
